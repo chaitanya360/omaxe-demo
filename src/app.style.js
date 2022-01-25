@@ -28,3 +28,26 @@ export const PlanStyle = styled.div`
     stroke-width: 2px;
   }
 `;
+
+export const IsoStyle = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .body {
+    max-width: 600px;
+    height: auto;
+    background: white;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+`;

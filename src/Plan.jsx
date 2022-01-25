@@ -4,8 +4,9 @@ import { PathStyle, PlanStyle } from "./app.style";
 import tippy, { createSingleton } from "tippy.js";
 import HoverInfo from "./HoverInfo";
 import ReactDOMServer from "react-dom/server";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Iso from "./Iso";
 
 const paths = {
   0: {
@@ -71,7 +72,7 @@ const tippySetups = (planId) => {
         content: ReactDOMServer.renderToStaticMarkup(
           <HoverInfo
             title={`Area No. ${path}`}
-            features={["10 units", "2bkh , 3bhk", "2234 - 25234 Sq.ft"]}
+            features={["10 units", "2234 - 25234 Sq.ft"]}
           />
         ),
       });
@@ -92,6 +93,7 @@ const tippySetups = (planId) => {
 
 function Plan() {
   const { planId } = useParams();
+  const [showIso, setShowIso] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -100,6 +102,7 @@ function Plan() {
   }, []);
   return (
     <PlanStyle>
+      {showIso && <Iso onClick={() => setShowIso(false)} />}
       <svg
         width="auto"
         height="100%"
@@ -119,6 +122,7 @@ function Plan() {
               className="plan-path"
               id={`plan${planId}path${path}`}
               d={paths[planId][path]}
+              onClick={() => setShowIso((old) => !old)}
             />
           ))}
         </g>

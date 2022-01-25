@@ -15,7 +15,7 @@ const tippySetups = () => {
       content: ReactDOMServer.renderToStaticMarkup(
         <HoverInfo
           title={"Ground Floor"}
-          features={["10 units", "1bkh , 2bhk", "1234 - 21234 Sq.ft"]}
+          features={["101  Showrooms", "1234 - 18234 Sq.ft"]}
         />
       ),
     });
@@ -25,7 +25,7 @@ const tippySetups = () => {
       content: ReactDOMServer.renderToStaticMarkup(
         <HoverInfo
           title={"1 st Floor"}
-          features={["10 units", "2bkh , 3bhk", "2234 - 25234 Sq.ft"]}
+          features={["91 Showrooms", "934 - 15234 Sq.ft"]}
         />
       ),
     });
