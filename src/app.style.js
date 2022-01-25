@@ -13,3 +13,17 @@ export const PathStyle = styled.path`
     stroke: black;
   }
 `;
+
+export const PlanStyle = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  svg {
+    height: 90%;
+  }
+  path {
+    stroke: red;
+    stroke-width: 2px;
+  }
+`;

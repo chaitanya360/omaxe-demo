@@ -5,9 +5,9 @@ const HoverInfoStyle = styled.div`
   display: flex;
   flex-direction: column;
   width: 180px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: tomato;
   /* background-color: var(--clr-orange-light); */
-  color: black;
+  color: white;
   padding: 1rem;
   padding-right: 2.5rem;
   border-radius: 8px;
