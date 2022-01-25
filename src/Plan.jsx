@@ -84,7 +84,7 @@ const tippySetups = (planId) => {
       moveTransition: "transform 0.1s ease-out",
       allowHTML: true,
       placement: "left-start",
-      duration: [0, 1000],
+      duration: [0, 600],
       offset: [-40, 30],
     });
   }, 50);

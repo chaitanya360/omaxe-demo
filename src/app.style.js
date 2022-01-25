@@ -9,8 +9,9 @@ export const PathStyle = styled.path`
 
   :hover {
     fill: rgba(0, 255, 0, 1);
-    fill-opacity: 0.2;
+    fill-opacity: 0.5;
     stroke: black;
+    stroke-width: 2px;
   }
 `;
 
