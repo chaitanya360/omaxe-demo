@@ -72,7 +72,7 @@ const tippySetups = (planId) => {
         content: ReactDOMServer.renderToStaticMarkup(
           <HoverInfo
             title={`Area No. ${path}`}
-            features={["10 units", "2234 - 25234 Sq.ft"]}
+            features={["10 units", "1221 Sq.ft"]}
           />
         ),
       });
